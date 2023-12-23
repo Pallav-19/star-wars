@@ -1,12 +1,13 @@
 .table-component {
   border-collapse: collapse;
   max-width: 100%;
+  overflow: scroll !important;
 }
 .table-wrapper {
   flex-basis: 100%;
   display: flex;
   width: 100%;
-  overflow-x: scroll;
+  overflow: scroll !important;
 }
 td,
 th {
@@ -21,5 +22,5 @@ td:last-child {
   text-align: right !important;
 }
 tr:hover {
-background-color: rgba(255, 255, 255, 0.199);
+  background-color: rgba(255, 255, 255, 0.199);
 }

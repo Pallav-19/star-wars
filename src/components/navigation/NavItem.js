@@ -18,7 +18,7 @@ const NavItem = ({ title, to, icon }) => {
                 navigate(to)
                 dispatch(setTitle(title))
             }}
-            className='nav-item'><p> <i style={{ marginRight: '0.4rem' }}>{icon}</i> {title}</p> <KeyboardArrowRightIcon /></div>
+            className='nav-item'><p> <i style={{ marginRight: '0.4rem' }}>  {icon}</i> <p className='pn'>{title}</p></p> <KeyboardArrowRightIcon sx={{display:{xs:'none',md:'flex'}}} /></div>
     )
 }
 

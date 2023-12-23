@@ -48,3 +48,12 @@
 .single-card-image:hover {
   cursor: pointer;
 }
+@media screen and (max-width: 600px) {
+  .single-card-title {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem !important;
+  }
+  .view-toggler {
+    gap: 0.2rem;
+  }
+}

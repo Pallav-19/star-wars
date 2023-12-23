@@ -34,7 +34,7 @@ const SideNav = ({ children }) => {
                 >
                     <p
                         style={{
-                            fontSize: '1.8rem',
+                            fontSize: '1.5rem',
                             fontWeight: 500
                         }}
                     >{title}</p>
