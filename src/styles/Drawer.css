@@ -1,0 +1,33 @@
+.drawer {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 30vw;
+  height: 100vh;
+  background-color: #f8f8f915;
+  transition: left 0.3s ease;
+}
+
+.drawer.open {
+  left: 0;
+}
+
+.drawer-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 80%; 
+  background-color: white;
+  padding: 20px;
+  box-shadow: -2px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}

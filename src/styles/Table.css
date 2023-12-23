@@ -1,0 +1,22 @@
+.table-component {
+  border-collapse: collapse;
+  max-width: 100%;
+}
+.table-wrapper {
+  flex-basis: 100%;
+  display: flex;
+  width: 100%;
+  overflow-x: scroll;
+}
+td,
+th {
+  padding: 1rem 2rem;
+  text-align: left !important;
+  width: 23rem;
+}
+.table-wrapper::-webkit-scrollbar {
+  display: none;
+}
+td:last-child {
+  text-align: right !important;
+}

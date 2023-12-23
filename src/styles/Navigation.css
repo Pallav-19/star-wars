@@ -1,0 +1,68 @@
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+.appbar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem;
+  flex: 1;
+}
+.side-nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex: 9;
+}
+.side-nav-bar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: 1.8;
+  padding: 0.8rem;
+}
+.main-content {
+  flex: 8;
+  height: 100%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.main-content-grid-wrapper {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 23rem);
+  justify-content: center;
+  gap: 1.5rem;
+}
+.main-content::-webkit-scrollbar,
+.main-content-grid-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.nav-item {
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+}
+.nav-item:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.nav-item > p {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
