@@ -45,3 +45,6 @@
 .view-toggler > div:hover {
   cursor: pointer;
 }
+.single-card-image:hover {
+  cursor: pointer;
+}

@@ -5,6 +5,7 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux'
 import { store } from './app/store';
+import Drawer from './components/miscellaneous/Drawer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,6 +13,7 @@ root.render(
     <Provider
       store={store}
     >
+      <Drawer />
       <App />
     </Provider>
   </BrowserRouter>

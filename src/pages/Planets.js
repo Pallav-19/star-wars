@@ -17,7 +17,7 @@ const Planets = () => {
     return (
         <GridWrapper>
             {
-                data?.results?.map((result, index) => <SingleCard key={index} index={index} title={result?.name} />)
+                data?.results?.map((result, index) => <SingleCard resource={result} schema={planetsColumn} key={index} index={index} title={result?.name} />)
             }
 
         </GridWrapper>

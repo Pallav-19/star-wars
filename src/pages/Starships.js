@@ -12,14 +12,14 @@ const Starships = () => {
     const { data, isLoading } = useFetchStarshipsQuery()
     const viewMode = useSelector(currentViewMode)
 
-    if (isLoading) return <Spinner />   
-     if (viewMode === "List") return <Table data={data?.results} columns={starshipsColumn} />
+    if (isLoading) return <Spinner />
+    if (viewMode === "List") return <Table data={data?.results} columns={starshipsColumn} />
 
 
     return (
         <GridWrapper>
             {
-                data?.results?.map((result, index) => <SingleCard key={index} index={index} title={result?.name} />)
+                data?.results?.map((result, index) => <SingleCard resource={result} schema={starshipsColumn} key={index} index={index} title={result?.name} />)
             }
 
         </GridWrapper>

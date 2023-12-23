@@ -1,7 +1,11 @@
 import React from 'react'
 import "../../styles/Table.css"
 import { MoreVert } from '@mui/icons-material'
+import { setDrawer } from '../../app/features/drawerSlice'
+import { useDispatch } from "react-redux"
+import { PICSUM_BASE_URL } from '../../constants/appConstants'
 const Table = ({ columns, data }) => {
+    const dispatch = useDispatch()
     return (
         <div
             className='table-wrapper'
@@ -30,7 +34,9 @@ const Table = ({ columns, data }) => {
                 <tbody>
                     {data.map((d, index) => <tr style={{ borderBottom: '2px solid rgba(255,255,255,0.5)' }} key={index}>
                         {
-                            columns.map((c) => <td key={index + 11}>{d[c.accessor]}</td>)
+                            columns.map((c) => <td style={{ cursor: 'pointer' }} onClick={() => {
+                                dispatch(setDrawer({ resource: { ...d, image: PICSUM_BASE_URL + "/?random=" + index }, schema: columns }))
+                            }} key={index + 11}>{d[c.accessor]}</td>)
                         }
                         <td>
                             <MoreVert />
